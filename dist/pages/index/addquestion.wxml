@@ -1,0 +1,14 @@
+<block wx:if="{{$taroCompReady}}">
+    <dialog>
+        <view class="add-question">
+            <view class="question-body">
+                <input focus="{{true}}" bindinput="changeTitle" class="question-title" placeholder="请输入您的问题标题" data-e-input-so="this" />
+                <textarea bindinput="changeDes" class="question-des" placeholder="请输入您的问题描述" data-e-input-so="this"></textarea>
+                <view class="btn-group">
+                    <button bindtap="btnOK" class="btn-question ok" data-e-tap-so="this">确定</button>
+                    <button bindtap="btnCancel" class="btn-question cancel" data-e-tap-so="this">取消</button>
+                </view>
+            </view>
+        </view>
+    </dialog>
+</block>
